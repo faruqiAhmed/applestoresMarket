@@ -15,6 +15,11 @@ struct AddReview: View {
     @State private var Entime : String = ""
     var body: some View {
         NavigationView {
+            ZStack{
+               Rectangle()
+                .fill(Color("backgroun"))
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .edgesIgnoringSafeArea(.all)
         List{
             
             VStack{
@@ -55,7 +60,7 @@ struct AddReview: View {
         .navigationBarTitle(Text("Add Reviews"))
         }
             
-        
+        }
        
     }
 }

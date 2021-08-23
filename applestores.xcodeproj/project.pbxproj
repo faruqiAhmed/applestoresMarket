@@ -20,6 +20,7 @@
 		E2A94CB926D143B400B7F9C9 /* MarketStreet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A94CB826D143B400B7F9C9 /* MarketStreet.swift */; };
 		E2A94CBC26D2038400B7F9C9 /* AddOpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A94CBB26D2038300B7F9C9 /* AddOpeningHours.swift */; };
 		E2A94CBE26D24D2A00B7F9C9 /* AddReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A94CBD26D24D2900B7F9C9 /* AddReview.swift */; };
+		E2A94CE426D36E0000B7F9C9 /* AppleStores.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A94CE326D36DFF00B7F9C9 /* AppleStores.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E2A94CB826D143B400B7F9C9 /* MarketStreet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketStreet.swift; sourceTree = "<group>"; };
 		E2A94CBB26D2038300B7F9C9 /* AddOpeningHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOpeningHours.swift; sourceTree = "<group>"; };
 		E2A94CBD26D24D2900B7F9C9 /* AddReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReview.swift; sourceTree = "<group>"; };
+		E2A94CE326D36DFF00B7F9C9 /* AppleStores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStores.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			children = (
 				E2A94C6D26D0E83800B7F9C9 /* AppleList.swift */,
 				E2A94CB826D143B400B7F9C9 /* MarketStreet.swift */,
+				E2A94CE326D36DFF00B7F9C9 /* AppleStores.swift */,
 			);
 			path = apple;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				E2A94C6E26D0E83800B7F9C9 /* AppleList.swift in Sources */,
 				E2A94C3B26D0C6F800B7F9C9 /* ContentView.swift in Sources */,
 				E2A94CBE26D24D2A00B7F9C9 /* AddReview.swift in Sources */,
+				E2A94CE426D36E0000B7F9C9 /* AppleStores.swift in Sources */,
 				E2A94C3926D0C6F800B7F9C9 /* applestoresApp.swift in Sources */,
 				E2A94C6926D0C8F500B7F9C9 /* ModelData.swift in Sources */,
 			);

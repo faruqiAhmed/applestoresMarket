@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct MarketStreet: View {
+    @State private var AddOpeningHours = false
     var body: some View {
        
         NavigationView {
            
-//            ZStack{
-//                Color.red
-//                .ignoresSafeArea()
+         ZStack{
+//              Color.red
+//              .ignoresSafeArea()
             
             List {
               
@@ -34,19 +35,23 @@ struct MarketStreet: View {
                     Text("Contact")
                 }
                 VStack(alignment: .leading) {
+                    
                     Text("Opening Hours")
                     VStack{
                               Text("            Monday > 8:00 - 10:00")
                         Text("            Tuesday > 8:00 - 10:00")
                         Text("           Wednesday > 8:00 - 10:00")
                         Spacer()
-                        HStack{
+                       // HStack{
+                            
                             Button(action: {
                               
                             }) {
                                 HStack {
+                                    
                                 
                                     Text("Add Opening Sours ")
+                                    
                                         //.fontWeight(.semibold)
                                        // .font(.title)
                                 }
@@ -55,7 +60,7 @@ struct MarketStreet: View {
                                 .background(Color.gray)
                                 .cornerRadius(120)
                             }
-                        }
+                        //}
                     }
                 }
  
@@ -104,7 +109,7 @@ struct MarketStreet: View {
         }
         
     }
-
+}
 
 
 struct MarketStreet_Previews: PreviewProvider {

@@ -14,6 +14,11 @@ struct AddOpeningHours: View {
     var body: some View {
         
         NavigationView {
+            ZStack{
+               Rectangle()
+                .fill(Color("backgroun"))
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .edgesIgnoringSafeArea(.all)
         List{
 //            VStack{
 //                Text("Opening Hours")
@@ -91,6 +96,8 @@ struct AddOpeningHours: View {
         }
         .navigationBarTitle(Text("Opening Hours"))
         }
+        }
+                        
 //        ZStack{
 //        VStack{
 //
