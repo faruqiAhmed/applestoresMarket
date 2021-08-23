@@ -1,2 +1,1 @@
-
-![CHEESE!](Screen Shot 2021-08-23 at 12.52.22 PM.png)
+![alt text](https://github.com/faruqiAhmed/applestoresMarket/blob/main/image/Screen%20Shot%202021-08-23%20at%2012.52.22%20PM.png?raw=true)
