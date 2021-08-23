@@ -8,11 +8,13 @@
 import SwiftUI
  
 struct AddReview: View {
+    
     init() {
             UITextView.appearance().backgroundColor = .clear // First, remove the UITextView's backgroundColor.
         }
     @State var EnterName: String = ""
-    @State private var Entime : String = ""
+    //@State private var Entime : String = ""
+    @State private var wakeUp = Date()
     var body: some View {
         NavigationView {
             ZStack{
@@ -37,16 +39,19 @@ struct AddReview: View {
                
             }
             VStack{
-                VStack(alignment: .center, spacing: 10.0, content: {
-                    TextField("10:00Am", text: $Entime)
+                VStack(alignment: .center) {
+//TextField("10:00Am", text: $wakeUp)
+                    DatePicker( "", selection: $wakeUp, displayedComponents: .hourAndMinute)
                       
-                        .padding(.vertical,12)
+                        .padding(.vertical)
                         .padding(.horizontal)
                         .background(Color.gray.opacity(0.10))
                         .cornerRadius(20)
                         .padding(.top,15)
+                        .padding(.all)
                       
-                })
+                }
+              //  .labelsHidden()
                 .padding()
                 
             }

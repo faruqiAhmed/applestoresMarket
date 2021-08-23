@@ -8,9 +8,11 @@
 import SwiftUI
  
 struct AddOpeningHours: View {
-    @State var date:  String = ""
+    @State private  var date = ""
     @State var t: String = ""
     @State var tim: String = ""
+    @State private var wakeUp = Date()
+    @State private var wakeUp2 = Date()
     var body: some View {
         
         NavigationView {
@@ -45,22 +47,21 @@ struct AddOpeningHours: View {
     
             HStack{
             
-         
-                TextField("10:00", text: $t)
+                DatePicker("", selection: $wakeUp, displayedComponents: .hourAndMinute)
+               // TextField("10:00", text: $t)
                     .padding(.vertical,12)
                     .padding(.horizontal)
                     .background(Color.gray.opacity(0.10))
                     .cornerRadius(20)
                     .padding(.top,15)
                 
-//                    .padding(.all)
-//                    .modifier(CustomTextFieldModifier())
+             .padding(.all)                
                Divider()
                 
                 VStack(alignment: .center){
-                   
+                    DatePicker("", selection: $wakeUp, displayedComponents: .hourAndMinute)
 //                    Text("open")
-                    TextField("8.00", text: $date)
+//                    TextField("8.00", text: $date)
                   
 //                    Text("Close")
                     
@@ -74,8 +75,7 @@ struct AddOpeningHours: View {
                 .background(Color.gray.opacity(0.10))
                 .cornerRadius(20)
                 .padding(.top,15)
-//                .padding(.all)
-//                .modifier(CustomTextFieldModifier())
+          .padding(.all)
                
             }
         }
@@ -98,24 +98,7 @@ struct AddOpeningHours: View {
         }
         }
                         
-//        ZStack{
-//        VStack{
-//
-//            HStack{
-//                TextField("Friday", text: $date)
-//            }.padding()
-//            .modifier(CustomTextFieldModifier())
-//            HStack{
-////                Image(systemName: “lock.fill”)
-//            SecureField("10:00", text: $t)
-//                Spacer()
-//                SecureField("10:00", text: $t)
-//
-//            }.padding()
-//            .modifier(CustomTextFieldModifier())
-//        }
-//
-//    }
+
     }
 }
 
@@ -142,22 +125,6 @@ struct RoundedButton : View {
     }
 }
 
-    
-
-//struct CustomTextFieldModifier: ViewModifier {
-//func body(content: Content) -> some View {
-//content.background(Color.white)
-//.cornerRadius(10)
-//.overlay(
-//RoundedRectangle(cornerRadius: 10)
-//.stroke(Color.black.opacity(0.05), lineWidth: 4)
-//.shadow(color: Color.black.opacity(0.2), radius: 6, x: 6, y: 6)
-//.clipShape(RoundedRectangle(cornerRadius: 10))
-//.shadow(color: Color.black.opacity(0.2), radius: 6, x: -6, y: -6)
-//.clipShape(RoundedRectangle(cornerRadius: 15))
-//)
-//}
-//}
 
 struct AddOpeningHours_Previews: PreviewProvider {
     static var previews: some View {
